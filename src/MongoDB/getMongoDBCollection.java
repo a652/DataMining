@@ -9,8 +9,8 @@ import com.mongodb.MongoClient;
 import com.mongodb.MongoClientOptions;
 import com.mongodb.ServerAddress;
 
-public class getMongoDBCollection
-{
+public class getMongoDBCollection {
+
 	public static DBCollection getMongoDBColl(String host, String DBName,
 			String username, String password, String collectionName)
 			throws UnknownHostException
@@ -35,7 +35,6 @@ public class getMongoDBCollection
 		{
 			System.out.println("collectionName: " + name);
 		}
-		// DBCollection statusData = db.getCollection("StatusData");
 		DBCollection collection = db.getCollection(collectionName);
 		System.out.println("The size of the collection you choose is "
 				+ collection.count());
